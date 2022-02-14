@@ -9,7 +9,14 @@
   "content_scripts": [
     {
       "matches": ["*://www.nytimes.com/games/wordle/index.html*"],
-      "js": ["index.js"]
+      "js": ["extension/index.js"]
     }
-  ]
+  ],
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "extension/popup/popup.html",
+    "default_icon": {
+      "32": "icon/corrodle.png"
+    }
+  }
 }
