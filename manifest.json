@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Corrodle",
+  "version": "1.0",
+  "description": "Helping you get your daily wordle correct!",
+  "icons": {
+    "48": "icon/corrodle.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.nytimes.com/games/wordle/index.html*"],
+      "js": ["index.js"]
+    }
+  ]
+}
