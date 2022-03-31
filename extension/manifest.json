@@ -4,19 +4,19 @@
   "version": "1.0",
   "description": "Helping you get your daily wordle correct!",
   "icons": {
-    "48": "icon/corrodle.png"
+    "48": "../icon/corrodle.png"
   },
   "content_scripts": [
     {
       "matches": ["*://www.nytimes.com/games/wordle/index.html*"],
-      "js": ["extension/index.js"]
+      "js": ["index.js"]
     }
   ],
   "browser_action": {
     "browser_style": true,
-    "default_popup": "extension/popup/popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": {
-      "32": "icon/corrodle.png"
+      "32": "../icon/corrodle.png"
     }
   }
 }
